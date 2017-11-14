@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Touch the cow</title>
+    <style>
+        img {
+            display: block;
+            margin: auto
+        }
+        div {
+            text-align: center;
+            font-size: 50px;
+        }
+        p {
+            text-align: center;
+            font-size: 50px;   
+        }
+    </style>
+</head>
+<body>
+    <p>Click on cow it will count for you :)</p>
+    <img id="img" src="https://upload.wikimedia.org/wikipedia/commons/2/21/Cow_cartoon_04.svg">
+    <div id="counter">0</div>
+
+    <script>
+        let num = 0
+        const img = document.getElementById('img')
+        const counter = document.getElementById('counter')
+        img.addEventListener('click', function () {
+            num += 1
+            counter.innerHTML = num
+        })
+    </script>
+</body>
+</html>
